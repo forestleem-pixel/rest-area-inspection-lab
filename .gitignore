@@ -1,0 +1,44 @@
+# ── 의존성 (npm install로 언제든 다시 설치 가능) ──
+node_modules/
+
+# ── 빌드 결과물 (Vercel이 npm run build로 직접 생성) ──
+dist/
+dist-ssr/
+*.local
+
+# ── 환경변수 / 비밀 값 (절대 업로드 금지) ──
+.env
+.env.*
+!.env.example
+
+# ── 배포·DB 도구가 만드는 로컬 설정 ──
+.vercel/
+supabase/.temp/
+supabase/.branches/
+
+# ── 로그 ──
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── 캐시 / 테스트 결과 ──
+.cache/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# ── 에디터·AI 도구 개인 설정 ──
+.vscode/
+.idea/
+.claude/
+*.swp
+*.suo
+*.sw?
+
+# ── 운영체제가 만드는 파일 ──
+.DS_Store
+Thumbs.db
+desktop.ini
